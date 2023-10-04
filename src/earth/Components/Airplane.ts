@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { GLTF, GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import Earth from "../index";
+import ElephantModel from "../../assets/low-poly-animals.gltf";
 
 export default class Airplane {
   earth;
@@ -50,7 +51,7 @@ export default class Airplane {
 
   loadModel() {
     const loader = new GLTFLoader();
-    loader.load("low-poly-animals.gltf", (gltf: GLTF) => {
+    loader.load(ElephantModel, (gltf: GLTF) => {
       this.target = gltf.scene.children[2];
 
       this.target.position.set(0, 0, 0);

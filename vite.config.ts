@@ -4,5 +4,6 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "https://moshi-li.github.io/roaming-elephant/",
+  base: "https://moshi-li.github.io/roaming-elephant",
+  assetsInclude: "**/*.gltf",
 });

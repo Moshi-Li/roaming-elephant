@@ -1,6 +1,8 @@
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { TextureLoader } from "three";
 import { EventEmitter } from "events";
+import EarthImage from "../../assets/8k_earth_nightmap.jpg";
+import ElephantModel from "../../assets/low-poly-animals.gltf";
 
 enum sourceType {
   gltfModel,
@@ -16,12 +18,12 @@ export interface ResourceMetaI {
 const ResourceMeta: ResourceMetaI[] = [
   {
     name: "globeTexture",
-    path: "/8k_earth_nightmap.jpg",
+    path: EarthImage,
     type: sourceType.texture,
   },
   {
     name: "animals",
-    path: "/low-poly-animals.gltf",
+    path: ElephantModel,
     type: sourceType.gltfModel,
   },
 ];

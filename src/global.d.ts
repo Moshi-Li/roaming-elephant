@@ -4,3 +4,8 @@ declare global {
     SkillPlayground: any;
   }
 }
+
+declare module "*.gltf" {
+  const src: string;
+  export default src;
+}
