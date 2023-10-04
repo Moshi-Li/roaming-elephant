@@ -52,6 +52,8 @@ export default class Earth extends EventEmitter {
       this.renderer.instance.domElement
     );
 
+    this.controls.enabled = false;
+
     this.resources.on("loaded", () => {
       this.components = new ModelComponents();
       this.emit("loaded");
